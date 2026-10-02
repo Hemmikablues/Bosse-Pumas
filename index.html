@@ -35,6 +35,17 @@ footer{padding:64px 0;border-top:1px solid var(--line);background:#090909}.foote
 .hero-inner{transform:translateY(38px)}
 @media(max-width:620px){.hero-inner{transform:translateY(18px)}}
 </style>
+
+<style>
+/* v4.7: visa hela huvudbilden på mobil och lägg textblocket under bilden */
+@media(max-width:620px){
+  .hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;overflow:hidden}
+  .hero img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;order:0}
+  .hero:after{display:none}
+  .hero-inner{position:relative;transform:none;max-width:none;padding:26px 18px 30px;background:#0b0b0b;order:1}
+  .hero h1{font-size:clamp(44px,13vw,72px);white-space:nowrap;margin:0 0 16px}
+}
+</style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#top"><img src="assets/logo.jpg" alt="Bosse Pumas-logotyp"><span>BOSSE PUMAS</span></a><nav><a href="#bandet">BANDET</a><a href="#musik">MUSIK</a><a href="#video">VIDEO</a><a href="#spelningar">SPELNINGAR</a><a href="#bilder">BILDER</a><a href="#kontakt">KONTAKT</a></nav></div></header>
@@ -51,7 +62,7 @@ footer{padding:64px 0;border-top:1px solid var(--line);background:#090909}.foote
 <article class="video-card"><div class="video-frame"><video controls preload="metadata" poster="assets/posters/3._i_just_wanna_make_love_to_you.jpg" src="assets/3. I just wanna make love to you.mp4"></video></div><div><h3>I Just Wanna Make Love to You</h3></div></article>
 <article class="video-card"><div class="video-frame"><video controls preload="metadata" poster="assets/posters/4._diving_duck.jpg" src="assets/4. Diving Duck.mp4"></video></div><div><h3>Diving Duck</h3></div></article>
 </div></div></section>
-<section id="spelningar" class="music"><div class="wrap"><div class="live-grid"><div class="live-photo"><img src="assets/Handels2024.jpg" alt="Bosse Pumas live"></div><div class="dates"><div class="section-head"><h2>Spelningar</h2></div><p style="color:var(--muted);font-size:16px;margin:0 0 20px">Inga nya spelningar är bokade just nu.</p><div class="date"><b>TIDIGARE</b><span>Eksjö Stadsfest</span><small>Eksjö · 29 aug 2026</small></div><div class="date"><b>TIDIGARE</b><span>Malmöns Kulturfestival</span><small>Malmö · 16 juli 2026</small></div><div style="padding-top:20px"><a class="btn" href="#kontakt">Boka bandet</a></div></div></div></div></section>
+<section id="spelningar" class="music"><div class="wrap"><div class="live-grid"><div class="live-photo"><img src="assets/Handels2024.jpg" alt="Bosse Pumas live"></div><div class="dates"><div class="section-head"><h2>Spelningar</h2></div><div class="date"><b>TIDIGARE</b><span>Eksjö Stadsfest</span><small>Eksjö · 29 aug 2026</small></div><div class="date"><b>TIDIGARE</b><span>Malmöns Kulturfestival</span><small>Malmö · 16 juli 2026</small></div><div style="padding-top:20px"><a class="btn" href="#kontakt">Boka bandet</a></div></div></div></div></section>
 <section id="bilder"><div class="wrap"><div class="section-head"><h2>Bilder</h2></div><div class="gallery"><img src="assets/gallery_handels2024.jpg" alt="Bosse Pumas live 2024"><img src="assets/gallery_hela_bp.jpg" alt="Hela Bosse Pumas på scen"><img src="assets/gallery_abron1.jpg" alt="Bosse Pumas på Åbron"><img src="assets/gallery_abron_martin.jpg" alt="Bosse Pumas på Åbron"><img src="assets/gallery_handels2017.jpg" alt="Bosse Pumas live 2017"><img src="assets/gallery_14.jpg" alt="Bosse Pumas live"><img src="assets/gallery_17.jpg" alt="Bosse Pumas live"><img src="assets/gallery_freddy.jpg" alt="Freddy live"><img src="assets/gallery_martin.jpg" alt="Martin live"><img src="assets/gallery_mikael.jpg" alt="Mikael live"><img src="assets/gallery_roger.jpg" alt="Roger live"></div></div></section>
 <footer id="kontakt"><div class="wrap"><div class="footer-grid"><div><h3>Kontakt</h3><p>Här lägger vi in bokningsadress och övriga kontaktuppgifter.</p></div><div><h3>Följ oss</h3><p><a href="https://www.facebook.com/profile.php?id=100051667967382" target="_blank" rel="noopener">Facebook</a></p></div><div><h3>Merch</h3><p><img src="assets/Merch.jpg" alt="Bosse Pumas plektrum" style="width:110px;height:74px;object-fit:cover;border:1px solid #30302d"></p></div></div><div class="fine">© Bosse Pumas</div></div></footer>
 </main>

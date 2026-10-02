@@ -106,9 +106,10 @@ footer{padding:64px 0;border-top:1px solid var(--line);background:#090909}.foote
   .nav{grid-template-columns:auto 1fr;grid-template-areas:"brand toggle" "menu menu";min-height:auto;padding-top:8px;padding-bottom:8px;gap:6px 12px}
   .brand{grid-area:brand;justify-content:flex-start}.brand img{width:82px;height:82px}
   .nav:after{content:"MENY";grid-area:toggle;justify-self:end;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.12em}
-  .nav-side{grid-area:menu;display:flex;justify-content:center;flex-wrap:wrap;gap:4px 14px;border-top:1px solid var(--line);padding-top:6px}
+  .nav-side{grid-area:menu;display:flex;justify-content:center;flex-wrap:nowrap;gap:0;border-top:1px solid var(--line);padding-top:6px;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:none}
   .nav-left,.nav-right{display:contents}
-  .nav-side a{padding:6px 0;font-size:9px}
+  .nav-side a{padding:6px 10px;font-size:9px;flex:0 0 auto}
+  .nav-side::-webkit-scrollbar{display:none}
   .band-break img{aspect-ratio:auto;height:auto;max-height:none;object-fit:contain}
 }
 </style>
